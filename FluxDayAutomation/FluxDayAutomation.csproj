@@ -17,9 +17,4 @@
     <PackageReference Include="Selenium.WebDriver" Version="3.14.0" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Drivers\" />
-    <Folder Include="PageObjects\" />
-  </ItemGroup>
-
 </Project>
