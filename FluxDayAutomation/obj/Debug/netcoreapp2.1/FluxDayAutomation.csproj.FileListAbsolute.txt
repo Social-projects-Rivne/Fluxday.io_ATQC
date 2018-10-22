@@ -1,0 +1,11 @@
+E:\Work_Table\STEP\SoftServe\ITAcademy\GitRepoFluxDayIO\fluxday\FluxDayAutomation\bin\Debug\netcoreapp2.1\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+E:\Work_Table\STEP\SoftServe\ITAcademy\GitRepoFluxDayIO\fluxday\FluxDayAutomation\bin\Debug\netcoreapp2.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+E:\Work_Table\STEP\SoftServe\ITAcademy\GitRepoFluxDayIO\fluxday\FluxDayAutomation\bin\Debug\netcoreapp2.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+E:\Work_Table\STEP\SoftServe\ITAcademy\GitRepoFluxDayIO\fluxday\FluxDayAutomation\bin\Debug\netcoreapp2.1\FluxDayAutomation.deps.json
+E:\Work_Table\STEP\SoftServe\ITAcademy\GitRepoFluxDayIO\fluxday\FluxDayAutomation\bin\Debug\netcoreapp2.1\FluxDayAutomation.runtimeconfig.json
+E:\Work_Table\STEP\SoftServe\ITAcademy\GitRepoFluxDayIO\fluxday\FluxDayAutomation\bin\Debug\netcoreapp2.1\FluxDayAutomation.runtimeconfig.dev.json
+E:\Work_Table\STEP\SoftServe\ITAcademy\GitRepoFluxDayIO\fluxday\FluxDayAutomation\bin\Debug\netcoreapp2.1\FluxDayAutomation.dll
+E:\Work_Table\STEP\SoftServe\ITAcademy\GitRepoFluxDayIO\fluxday\FluxDayAutomation\obj\Debug\netcoreapp2.1\FluxDayAutomation.csprojAssemblyReference.cache
+E:\Work_Table\STEP\SoftServe\ITAcademy\GitRepoFluxDayIO\fluxday\FluxDayAutomation\obj\Debug\netcoreapp2.1\FluxDayAutomation.csproj.CoreCompileInputs.cache
+E:\Work_Table\STEP\SoftServe\ITAcademy\GitRepoFluxDayIO\fluxday\FluxDayAutomation\obj\Debug\netcoreapp2.1\FluxDayAutomation.AssemblyInfoInputs.cache
+E:\Work_Table\STEP\SoftServe\ITAcademy\GitRepoFluxDayIO\fluxday\FluxDayAutomation\obj\Debug\netcoreapp2.1\FluxDayAutomation.AssemblyInfo.cs
