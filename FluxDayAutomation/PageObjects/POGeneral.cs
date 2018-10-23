@@ -61,5 +61,10 @@ namespace FluxDayAutomation.PageObjects
 
             throw new Exception(this.ToString() + ": Element with class \"" + Class + "\" not found!");
         }
+
+        public string GetURL()
+        {
+            return this.url;
+        }
     }
 }
