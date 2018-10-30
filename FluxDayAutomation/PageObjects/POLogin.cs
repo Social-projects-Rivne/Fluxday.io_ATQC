@@ -6,10 +6,10 @@ namespace FluxDayAutomation.PageObjects
     {
         public POLogin() : base("https://app.fluxday.io/")
         {
-            base.AddElement("user_email", "inputbox");
-            base.AddElement("user_password", "inputbox");
-            base.AddElement("user_remember_me", "checkbox");
-            base.AddElementByClass("btn-login", "button");
+            AddElement("user_email", "inputbox");
+            AddElement("user_password", "inputbox");
+            AddElement("user_remember_me", "checkbox");
+            AddElementByClass("btn-login", "button");
         }
     }
 }
