@@ -5841,11 +5841,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/tony/Projects/ubuntu/FluxdayIO_ATQC/FluxdayIO_ATQC.csproj",
+      "projectUniqueName": "/Users/tony/Projects/new/Fluxday.io_ATQC/FluxdayIO_ATQC/FluxdayIO_ATQC.csproj",
       "projectName": "FluxdayIO_ATQC",
-      "projectPath": "/Users/tony/Projects/ubuntu/FluxdayIO_ATQC/FluxdayIO_ATQC.csproj",
+      "projectPath": "/Users/tony/Projects/new/Fluxday.io_ATQC/FluxdayIO_ATQC/FluxdayIO_ATQC.csproj",
       "packagesPath": "/Users/tony/.nuget/packages/",
-      "outputPath": "/Users/tony/Projects/ubuntu/FluxdayIO_ATQC/obj/",
+      "outputPath": "/Users/tony/Projects/new/Fluxday.io_ATQC/FluxdayIO_ATQC/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"

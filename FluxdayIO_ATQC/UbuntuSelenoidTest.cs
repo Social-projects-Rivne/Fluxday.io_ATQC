@@ -45,9 +45,9 @@ namespace FluxdayIO_ATQC
         public void TestChrome70()
         {
             var capabilitiesChrome70 = new DesiredCapabilities("chrome", "70.0", new Platform(PlatformType.Any));
-            //capabilitiesChrome70.SetCapability("enableVNC", true);
+           
             driverChrome70 = new RemoteWebDriver(new Uri("http://172.17.0.1:4444/wd/hub"), capabilitiesChrome70);
-            //driverChrome70.Manage().Window.Size = new System.Drawing.Size(1920, 1080);
+           
             driverChrome70.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
 
             driverChrome70.Navigate().GoToUrl("https://app.fluxday.io/users/sign_in");
