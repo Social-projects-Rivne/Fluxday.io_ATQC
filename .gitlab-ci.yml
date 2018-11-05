@@ -1,16 +1,8 @@
-stages:
-  - before_test
-  - testing
 
-before_testing_job:
-  stage: before_test
-  script:
-  - echo "hi"
-  - dotnet restore
 
 test_job:
-  stage: testing
   script:
+  - dotnet restore
   - dotnet test
   tags:
   - my-ubuntu
