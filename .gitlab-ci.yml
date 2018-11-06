@@ -1,6 +1,7 @@
 stages:
   - before_test
   - testing
+  - logs
 
 before_testing_job:
   stage: before_test
@@ -13,3 +14,11 @@ test_job:
   script:
   - dotnet restore
   - dotnet test
+  
+gather_log_job:
+  stage: logs
+  script:
+  - docker logs selenoid > logs.txt | gzip > Package.gz
+  artifacts:
+     paths:
+     - Package.gz
