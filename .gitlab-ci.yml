@@ -18,7 +18,7 @@ test_job:
 gather_log_job:
   stage: logs
   script:
-  - docker logs selenoid > logs.txt | gzip > Package.gz
+  - docker logs selenoid &> logs.log
   artifacts:
      paths:
-     - Package.gz
+     - logs.log
