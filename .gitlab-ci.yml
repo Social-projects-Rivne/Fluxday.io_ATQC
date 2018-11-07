@@ -19,6 +19,8 @@ gather_log_job:
   stage: logs
   script:
   - docker logs selenoid &> logs.log
+  - docker logs selenoid &> logs_today_temp.log && cat logs_today_temp.log | grep ""$(date ""+%Y/%m/%d"")"" > logs_today.log
   artifacts:
      paths:
      - logs.log
+     - logs_today.log
