@@ -1,19 +1,17 @@
 stages:
-  - before_test
   - testing
   - logs
-
-before_testing_job:
-  stage: before_test
-  script:
-  - echo "hi"
-
 
 test_job:
   stage: testing
   script:
   - dotnet restore
   - dotnet test
+  when: manual
+  tags: 
+    - my-ubuntu
+  only:
+    - dev
   
 gather_log_job:
   stage: logs
@@ -24,3 +22,8 @@ gather_log_job:
      paths:
      - logs.log
      - logs_today.log
+  when: on_failure
+  tags: 
+    - my-ubuntu
+  only:
+    - dev
