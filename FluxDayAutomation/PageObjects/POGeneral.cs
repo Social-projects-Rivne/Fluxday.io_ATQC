@@ -7,88 +7,53 @@ namespace FluxDayAutomation.PageObjects
 {
     class POGeneral
     {
-        private string url;                                                                     // page url
-        private Dictionary<string, string> elements = new Dictionary<string, string>();         // key: element id; value: element type ("input", "checkbox", etc)
-        private Dictionary<string, string> elementsByClass = new Dictionary<string, string>();  // key: element class; value: element type
+        private string url;                                                                                                         // page url
+        private Dictionary<KeyValuePair<string, string>, string> elements = new Dictionary<KeyValuePair<string, string>, string>(); // key: element name; value: element type ("inputbox", "checkbox", etc); value2: search type ("id", "xpath", etc)
 
         public POGeneral(string URL)
         {
-            this.url = URL;
+            url = URL;
         }
 
         // Adding an element to PO
-        protected void AddElement(string ID, string ElementType)    
+        protected void AddElement(string Name, string ElementType, string SearchType)
         {
-            elements.Add(ID, ElementType);
-        }
-
-        // Adding an element by it's class
-        protected void AddElementByClass(string Class, string ElementType)  
-        {
-            elementsByClass.Add(Class, ElementType);
-        }
-
-        // Checking presence of element on PO
-        public bool IsElementPresent(string ID)    
-        {
-            foreach (KeyValuePair<string, string> keyValue in elements)
-            {
-                if (keyValue.Key == ID)
-                {
-                    return true;
-                }
-
-            }
-                
-            return false;
-        }
-
-        // Checking presence of element on PO by class
-        public bool IsElementPresentByClass(string Class)    
-        {
-            foreach (KeyValuePair<string, string> keyValue in elementsByClass)
-            {
-                if (keyValue.Key == Class)
-                {
-                    return true;
-                }
-            }
-
-            return false;
+            var temp = new KeyValuePair<string, string>(Name, ElementType);
+            elements.Add(temp, SearchType);
         }
 
         // Returns element's type or throws exception if unable to find
-        public string GetElementType(string ID)     
+        public string GetElementType(string Name)
         {
-            foreach (KeyValuePair<string, string> keyValue in elements)
+            foreach (KeyValuePair<KeyValuePair<string, string>, string> keyValue in elements)
             {
-                if (keyValue.Key == ID)
+                if (keyValue.Key.Key == Name)
                 {
-                    return keyValue.Value;
+                    return keyValue.Key.Value;
                 }
             }
-                
-            throw new Exception(this.ToString() + ": Element \"" + ID + "\" not found!");
+
+            throw new Exception(this.ToString() + ": Element \"" + Name + "\" not found!");
         }
 
-        // Returns element's type (by element class) or throws exception if unable to find
-        public string GetElementTypeByClass(string Class)    
+        // Checking presence of element on PO
+        public bool IsElementPresent(string Name, string Type)
         {
-            foreach (KeyValuePair<string, string> keyValue in elementsByClass)
+            foreach (KeyValuePair<KeyValuePair<string, string>, string> keyValue in elements)
             {
-                if (keyValue.Key == Class)
+                if (keyValue.Key.Key == Name && keyValue.Key.Value == Type)
                 {
-                    return keyValue.Value;
+                    return true;
                 }
             }
 
-            throw new Exception(this.ToString() + ": Element with class \"" + Class + "\" not found!");
+            return false;
         }
 
         // Returns PO's URL
         public string GetURL()
         {
-            return this.url;
+            return url;
         }
     }
 }
